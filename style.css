@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.light-mode {
+  background-color: white;
+  color: #323238;
+}
+
+.light-mode path {
+  fill: #323238;
+}
+
+.light-mode .sound-effecs div {
+  background: #e1e1e6;
+}
+
+.light-mode .sound-effecs .soundOn {
+  background-color: #02799d;
+}
+
+.light-mode .sound-effecs input {
+  background-color: #323238;
+}
+
+.light-mode .sound-effecs input::-webkit-slider-thumb {
+  background: #323238;
+}
+
+.light-mode .sound-effecs .soundOn input {
+  background-color: white;
+}
+
+.light-mode .sound-effecs .soundOn input::-webkit-slider-thumb {
+  background: white;
+}
+
+.hide {
+  display: none;
+}
+
+body {
+  display: flex;
+  position: relative;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  justify-content: center;
+  align-items: center;
+  background-color: #121214;
+  color: white;
+}
+
+main {
+  display: flex;
+  gap: clamp(3rem, 5rem + 10vw, 19.2rem);
+}
+
+path {
+  fill: #c4c4cc;
+}
+
+.mode-type {
+  position: absolute;
+  top: 3.2rem;
+  right: 3.2rem;
+}
+
+.timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.display {
+  display: flex;
+  font-size: 12.6rem;
+}
+
+.controls {
+  display: flex;
+  gap: 4rem;
+}
+
+.sound-effecs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 3.2rem;
+}
+
+.sound-effecs > div button {
+  width: 13.8rem;
+  height: 15.2rem;
+  border-radius: 2.4rem;
+}
+
+.sound-effecs > div {
+  width: 13.8rem;
+  height: 15.2rem;
+  border-radius: 2.4rem;
+  background: #29292e;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+  position: relative;
+}
+
+.sound-effecs .soundOn {
+  background-color: #0a34429d;
+}
+
+.sound-effecs .soundOn path {
+  fill: white;
+}
+
+.sound-effecs input {
+  position: absolute;
+  -webkit-appearance: none;
+  width: 9rem;
+  height: 4px;
+  border-radius: 5px;
+  bottom: 2rem;
+  z-index: 10;
+}
+
+.sound-effecs input::-webkit-slider-thumb {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: white;
+}
+
+@media (max-width: 768px) {
+  main {
+    padding-top: rem;
+    flex-direction: column;
+    gap: 9vw;
+  }
+
+  .display {
+    font-size: clamp(5rem, 35vw, 12.6rem);
+  }
+
+  .controls {
+    gap: clamp(1rem, 9vw, 4rem);
+  }
+
+  .sound-effecs {
+    gap: clamp(1rem, 5vw, 3.2rem);
+    align-self: center;
+    justify-self: center;
+  }
+}
