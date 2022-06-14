@@ -6,10 +6,18 @@ import {
 } from "./elements.js";
 
 export default function Sounds() {
-  const forest = new Audio("../sounds/Floresta.wav");
-  const rain = new Audio("../sounds/Chuva.wav");
-  const fire = new Audio("../sounds/Lareira.wav");
-  const market = new Audio("../sounds/Cafeteria.wav");
+  const forest = new Audio(
+    "https://github.com/Gabriel-WilliamS/FocusTimer-DarkMode/blob/main/sounds/Floresta.wav?raw=true"
+  );
+  const rain = new Audio(
+    "https://github.com/Gabriel-WilliamS/FocusTimer-DarkMode/blob/main/sounds/Chuva.wav?raw=true"
+  );
+  const fire = new Audio(
+    "https://github.com/Gabriel-WilliamS/FocusTimer-DarkMode/blob/main/sounds/Lareira.wav?raw=true"
+  );
+  const market = new Audio(
+    "https://github.com/Gabriel-WilliamS/FocusTimer-DarkMode/blob/main/sounds/Cafeteria.wav?raw=true"
+  );
   forest.loop = true;
   rain.loop = true;
   fire.loop = true;
